@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
-.wrapper {
+.wrapperHeader {
     width: 1640px;
     border: 4px solid #478BF9;
     border-radius: 64px;
@@ -13,7 +13,7 @@
     .menu {
         display: flex;
         gap: 32px;
-        margin-right: 191px;
+        margin-right: 200px;
 
         .elMenu {
             font: 400 16px Lexend;

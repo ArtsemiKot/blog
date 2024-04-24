@@ -3,7 +3,7 @@ import style from './style.module.scss'
 function Header() {
     return (
         <>
-            <div className={style.wrapper}>
+            <div className={style.wrapperHeader}>
                 <div className={style.menu}>
                     <p className={style.elMenu}>About us</p>
                     <p className={style.elMenu}>Brands</p>

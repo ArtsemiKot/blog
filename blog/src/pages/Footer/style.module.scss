@@ -1,0 +1,23 @@
+.wrapperFooter {
+    border: 4px solid #478BF9;
+    border-radius: 64px 64px 0px 0px;
+    padding: 40px 140px 24px 140px;
+    display: flex;
+
+    .menuFooter {
+        display: flex;
+        gap: 40px;
+
+        .elMenu {
+            font: 400 16px Lexend;
+            color: #ffffff;
+        }
+    }
+
+    .socialNetwork {
+        .textMedia {
+            font: 400 16px Lexend;
+            color: #ffffff;
+        }
+    }
+}

@@ -1,13 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
     background-image: url(./assets/mainbackground.png);
     background-size: cover;
-    background-repeat: no-repeat;
-    width: 1800px;
-    margin: auto;
+    width: auto;
+    background-repeat:no-repeat;
 }
