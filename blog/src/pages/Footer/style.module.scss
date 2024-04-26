@@ -2,22 +2,97 @@
     border: 4px solid #478BF9;
     border-radius: 64px 64px 0px 0px;
     padding: 40px 140px 24px 140px;
-    display: flex;
 
-    .menuFooter {
-        display: flex;
-        gap: 40px;
-
-        .elMenu {
-            font: 400 16px Lexend;
-            color: #ffffff;
-        }
+    .textMedia {
+        font: 400 16px Lexend;
+        color: #ffffff;
+        text-align: end;
+        margin-bottom: 10px;
     }
 
+
     .socialNetwork {
-        .textMedia {
-            font: 400 16px Lexend;
-            color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menuFooter {
+            display: flex;
+            gap: 40px;
+
+            .elMenu {
+                font: 400 16px Lexend;
+                color: #ffffff;
+            }
+        }
+
+        .socialMedia {
+            display: flex;
+            gap: 10px;
+
+            .iconTwitter {
+                background-image: url(../../assets/twit.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 32px;
+                height: 32px;
+            }
+
+            .iconFacebook {
+                background-image: url(../../assets/f.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 32px;
+                height: 32px;
+            }
+
+            .iconInstagram {
+                background-image: url(../../assets/inst.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 32px;
+                height: 32px;
+            }
+
+            .iconLinkedln {
+                background-image: url(../../assets/lin.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 32px;
+                height: 32px;
+            }
+
+            .iconYouTube {
+                background-image: url(../../assets/yout.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 32px;
+                height: 32px;
+            }
+
+            .iconTicTok {
+                background-image: url(../../assets/tict.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 32px;
+                height: 32px;
+            }
+
+            .iconTelegram {
+                background-image: url(../../assets/tel.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 32px;
+                height: 32px;
+            }
+
+            .iconVK {
+                background-image: url(../../assets/vk.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 32px;
+                height: 32px;
+            }
         }
     }
 }

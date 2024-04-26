@@ -1,21 +1,9 @@
-@keyframes animatedBackground {
-  from {
-    background-position: 0 100%;
+
+
+  .imgVerticalOne {
+    background-image: url(./assets/Line_Vertical_1.svg);
+    background-size: cover;
+    width: 130px;
+    height: 1300px;
+    background-repeat: no-repeat;
   }
-
-  to {
-    background-position: 0 0;
-  }
-
-}
-
-.wrapper {
-  background-image: url(./assets/Line_Vertical_2.svg);
-  background-size: auto;
-  width: auto;
-  height: auto;
-  background-repeat: repeat-y;
-  margin-right: auto;
-  margin-left: auto;
-  animation: animatedBackground 5s linear infinite;
-}

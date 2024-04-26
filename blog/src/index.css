@@ -6,8 +6,8 @@
 }
 
 body {
-    background-image: url(./assets/mainbackground.png);
+    background-image: url(./assets/1920.jpg);
     background-size: cover;
-    width: auto;
+    width: 100%;
     background-repeat:no-repeat;
 }
