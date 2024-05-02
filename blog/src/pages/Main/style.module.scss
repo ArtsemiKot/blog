@@ -1,8 +1,13 @@
 .wrapper {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1640px;
+    margin: auto;
 
     .contentLeft {
         width: 670px;
+
         .textHouse {
             font: 500 96px Lexend;
             color: #FFFFFF;
@@ -36,28 +41,143 @@
         display: flex;
         gap: 16px;
 
+        @keyframes imgOne {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-4%);
+
+            }
+        }
+
         .imgVertical1 {
             background-image: url(../../assets/Line_Vertical_1.svg);
             background-size: contain;
-            background-repeat: no-repeat;
+            background-repeat: repeat-y;
             width: 103px;
             height: 1330px;
+            animation: imgOne 7s linear infinite reverse;
         }
 
         .imgVertical2 {
             background-image: url(../../assets/Line_Vertical_2.svg);
             background-size: contain;
-            background-repeat: no-repeat;
+            background-repeat: repeat-y;
             width: 103px;
             height: 1330px;
+            animation: imgOne 7s linear infinite;
         }
 
         .imgVertical3 {
             background-image: url(../../assets/Line_Vertical_3.svg);
             background-size: contain;
-            background-repeat: no-repeat;
+            background-repeat: repeat-y;
             width: 103px;
             height: 1330px;
+            animation: imgOne 7s linear infinite reverse;
+        }
+    }
+
+    .contentRight {
+        width: 531px;
+
+        .textBlog {
+            font: 600 40px Lexend;
+            color: #FFFFFF;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .commentsBlog {
+            width: 531px;
+            height: 595px;
+            border-radius: 100px;
+            border: 3px solid #478BF9;
+            background-color: #FFFFFF1F;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+
+            .blockComment1 {
+                border-radius: 196px;
+                background-color: #478BF9;
+                padding: 14px;
+                width: 467px;
+                height: 146px;
+
+                .textComment {
+                    font: 400 24px Lexend;
+                    color: #ffffff;
+                    width: 339px;
+                }
+
+                .textData {
+                    font: 450 14px Lexend;
+                    color: #FFFFFF99;
+
+                }
+            }
+            .blockComment2 {
+                border-radius: 196px;
+                background-color: #478BF9;
+                padding: 14px;
+                width: 467px;
+                height: 146px;
+
+                .textComment {
+                    font: 400 24px Lexend;
+                    color: #ffffff;
+                    width: 339px;
+                }
+
+                .textData {
+                    font: 450 14px Lexend;
+                    color: #FFFFFF99;
+
+                }
+            }
+            .blockComment3 {
+                border-radius: 196px;
+                background-color: #478BF9;
+                padding: 14px;
+                width: 467px;
+                height: 146px;
+
+                .textComment {
+                    font: 400 24px Lexend;
+                    color: #ffffff;
+                    width: 339px;
+                }
+
+                .textData {
+                    font: 450 14px Lexend;
+                    color: #FFFFFF99;
+
+                }
+            }
+            .blockComment4 {
+                border-radius: 196px;
+                background-color: #478BF9;
+                padding: 14px;
+                width: 467px;
+                height: 146px;
+
+                .textComment {
+                    font: 400 24px Lexend;
+                    color: #ffffff;
+                    width: 339px;
+                }
+
+                .textData {
+                    font: 450 14px Lexend;
+                    color: #FFFFFF99;
+
+                }
+            }
+
         }
     }
 }
