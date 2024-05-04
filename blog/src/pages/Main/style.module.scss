@@ -93,77 +93,45 @@
         .commentsBlog {
             width: 531px;
             height: 595px;
+            padding: 24px;
             border-radius: 100px;
             border: 3px solid #478BF9;
             background-color: #FFFFFF1F;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 16px;
+            gap: 20px;
+            overflow-y: scroll;
 
-            .blockComment1 {
-                border-radius: 196px;
-                background-color: #478BF9;
-                padding: 14px;
-                width: 467px;
-                height: 146px;
-
-                .textComment {
-                    font: 400 24px Lexend;
-                    color: #ffffff;
-                    width: 339px;
-                }
-
-                .textData {
-                    font: 450 14px Lexend;
-                    color: #FFFFFF99;
-
-                }
+            &::-webkit-scrollbar {
+                width: 8px;
+                border-radius: 10px;
             }
-            .blockComment2 {
-                border-radius: 196px;
-                background-color: #478BF9;
-                padding: 14px;
-                width: 467px;
-                height: 146px;
 
-                .textComment {
-                    font: 400 24px Lexend;
-                    color: #ffffff;
-                    width: 339px;
-                }
-
-                .textData {
-                    font: 450 14px Lexend;
-                    color: #FFFFFF99;
-
-                }
+            &::-webkit-scrollbar-thumb {
+                background: #478bf9;
+                border-radius: 5px;
             }
-            .blockComment3 {
-                border-radius: 196px;
-                background-color: #478BF9;
-                padding: 14px;
-                width: 467px;
-                height: 146px;
 
-                .textComment {
-                    font: 400 24px Lexend;
-                    color: #ffffff;
-                    width: 339px;
-                }
-
-                .textData {
-                    font: 450 14px Lexend;
-                    color: #FFFFFF99;
-
-                }
+            &::-webkit-scrollbar-track {
+                margin: 100px 0;
+                border-radius: 10px;
+                background: #c1c1c1;
             }
-            .blockComment4 {
+
+            .blockComment {
                 border-radius: 196px;
-                background-color: #478BF9;
-                padding: 14px;
+                background-color: #1E1231;
                 width: 467px;
                 height: 146px;
+                padding: 16px 64px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                &:hover {
+                    background-color: #478BF9;
+                }
 
                 .textComment {
                     font: 400 24px Lexend;

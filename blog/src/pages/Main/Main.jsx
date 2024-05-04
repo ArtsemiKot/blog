@@ -1,5 +1,40 @@
 import style from './style.module.scss'
 function Main() {
+    
+    const arrComment = [
+        {
+            text: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
+            date: "10.02.2023",
+        },
+        {
+            text: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
+            date: "10.02.2023",
+        },
+        {
+            text: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
+            date: "10.02.2023",
+        },
+        {
+            text: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
+            date: "10.02.2023",
+        },
+        {
+            text: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
+            date: "10.02.2023",
+        },
+        {
+            text: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
+            date: "10.02.2023",
+        },
+        {
+            text: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
+            date: "10.02.2023",
+        },
+        {
+            text: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
+            date: "10.02.2023",
+        },
+    ]
     return (
         <>
             <div className={style.wrapper}>
@@ -16,22 +51,12 @@ function Main() {
                 <div className={style.contentRight}>
                     <p className={style.textBlog}>BLOG</p>
                     <div className={style.commentsBlog}>
-                        <div className={style.blockComment1}>
-                            <p className={style.textComment}>Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
-                            <p className={style.textData}>10.02.2023</p>
+                        {arrComment.map((el)=>(
+                        <div className={style.blockComment}>
+                            <p className={style.textComment}>{el.text}</p>
+                            <p className={style.textData}>{el.date}</p>
                         </div>
-                        <div className={style.blockComment2}>
-                            <p className={style.textComment}>Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
-                            <p className={style.textData}>10.02.2023</p>
-                        </div>
-                        <div className={style.blockComment3}>
-                            <p className={style.textComment}>Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
-                            <p className={style.textData}>10.02.2023</p>
-                        </div>
-                        <div className={style.blockComment4}>
-                            <p className={style.textComment}>Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
-                            <p className={style.textData}>10.02.2023</p>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
