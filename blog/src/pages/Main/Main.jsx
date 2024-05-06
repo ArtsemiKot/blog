@@ -1,6 +1,6 @@
 import style from './style.module.scss'
 function Main() {
-    
+
     const arrComment = [
         {
             text: "Payment methods: Skrill, Neteller, webmoney, Bank transfer",
@@ -51,12 +51,14 @@ function Main() {
                 <div className={style.contentRight}>
                     <p className={style.textBlog}>BLOG</p>
                     <div className={style.commentsBlog}>
-                        {arrComment.map((el)=>(
-                        <div className={style.blockComment}>
-                            <p className={style.textComment}>{el.text}</p>
-                            <p className={style.textData}>{el.date}</p>
+                        <div className={style.emptyWrapper}>
+                            {arrComment.map((el) => (
+                                <div className={style.blockComment}>
+                                    <p className={style.textComment}>{el.text}</p>
+                                    <p className={style.textData}>{el.date}</p>
+                                </div>
+                            ))}
                         </div>
-                        ))}
                     </div>
                 </div>
             </div>
