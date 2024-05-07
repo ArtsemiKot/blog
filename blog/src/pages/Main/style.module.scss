@@ -41,13 +41,15 @@
         display: flex;
         gap: 16px;
 
+
         @keyframes imgOne {
             0% {
-                transform: translateY(0);
+                background-position: 0 0;
+
             }
 
             100% {
-                transform: translateY(-5%);
+                background-position: 0 100px;
 
             }
         }
@@ -56,27 +58,27 @@
             background-image: url(../../assets/Line_Vertical_1.svg);
             background-size: contain;
             background-repeat: repeat-y;
-            width: 103px;
-            height: 1330px;
-            animation: imgOne 7s linear infinite reverse;
+            width: 100px;
+            height: 1300px;
+            animation: imgOne 4s linear infinite alternate-reverse;
         }
 
         .imgVertical2 {
             background-image: url(../../assets/Line_Vertical_2.svg);
             background-size: contain;
             background-repeat: repeat-y;
-            width: 103px;
-            height: 1330px;
-            animation: imgOne 7s linear infinite;
+            width: 100px;
+            height: 1300px;
+            animation: imgOne 4s linear infinite alternate;
         }
 
         .imgVertical3 {
             background-image: url(../../assets/Line_Vertical_3.svg);
             background-size: contain;
             background-repeat: repeat-y;
-            width: 103px;
-            height: 1330px;
-            animation: imgOne 7s linear infinite reverse;
+            width: 100px;
+            height: 1300px;
+            animation: imgOne 4s linear infinite alternate-reverse;
         }
     }
 
@@ -94,17 +96,18 @@
             width: 531px;
             height: 595px;
             border-radius: 100px;
-            border: 3px solid #478BF9;
-            background-color:black;
+            border: 4px solid #478BF9;
+            background-color: #373952;
             display: flex;
             align-items: center;
             justify-content: center;
 
             .emptyWrapper {
                 width: 500px;
-                height: 585px;
-                border-radius: 100px;
-                background-color: black;
+                height: 589px;
+                border-radius: 80px;
+                padding: 24px 0;
+                background-color: #373952;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -156,6 +159,176 @@
                 }
             }
 
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        margin: 70px auto;
+
+        .contentLeft {
+            width: 300px;
+            text-align: center;
+
+            .textHouse {
+                font: 500 46px Lexend;
+                color: #FFFFFF;
+                line-height: 1;
+                margin-bottom: 10px;
+
+                span {
+                    color: #478BF9;
+                }
+            }
+
+            .textROI {
+                font: 500 32px Lexend;
+                color: #FFFFFF99;
+                margin-bottom: 24px;
+            }
+
+            .btn {
+                width: 300px;
+                height: 53px;
+                text-align: center;
+                padding: 15px;
+                border-radius: 48px;
+                background: #478BF9;
+                font: 600 18px Lexend;
+                color: #FFFFFF;
+                margin-bottom: 32px;
+            }
+        }
+
+        .contentCentre {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 32px;
+
+            @keyframes imgOne {
+                0% {
+                    background-position: 100px 0;
+
+                }
+
+                100% {
+                    background-position: 0 0;
+
+                }
+            }
+
+            .imgVertical1 {
+                background-image: url(../../assets/Line_Grizont_1.svg);
+                background-size: contain;
+                background-repeat: repeat-x;
+                width: 300px;
+                height: 50px;
+                animation: imgOne 4s linear infinite alternate-reverse;
+            }
+
+            .imgVertical2 {
+                background-image: url(../../assets/Line_Grizont_2.svg);
+                background-size: contain;
+                background-repeat: repeat-x;
+                width: 300px;
+                height: 50px;
+                animation: imgOne 4s linear infinite alternate;
+            }
+
+            .imgVertical3 {
+                background-image: url(../../assets/Line_Grizont_3.svg);
+                background-size: contain;
+                background-repeat: repeat-x;
+                width: 300px;
+                height: 50px;
+                animation: imgOne 4s linear infinite alternate-reverse;
+            }
+        }
+
+        .contentRight {
+            width: 300px;
+
+            .textBlog {
+                font: 600 40px Lexend;
+                color: #FFFFFF;
+                text-align: center;
+                margin-bottom: 24px;
+            }
+
+            .commentsBlog {
+                width: 300px;
+                height: 421px;
+                border-radius: 50px;
+                border: 3px solid #478BF9;
+                background-color: #373952;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .emptyWrapper {
+                    width: 280px;
+                    height: 416px;
+                    border-radius: 35px;
+                    padding: 24px 0;
+                    background-color: #373952;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+                    overflow-y: scroll;
+                    overflow-x: none;
+
+                    &::-webkit-scrollbar {
+                        width: 7px;
+                        border-radius: 10px;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        background-color: #478bf9;
+                        border-radius: 5px;
+                    }
+
+                    &::-webkit-scrollbar-track {
+                        border-radius: 10px;
+                        background: #FFFFFF1F;
+                        margin-block: 100px;
+                    }
+
+                    .blockComment {
+                        border-radius: 50px;
+                        background-color: #1E1231;
+                        width: 270px;
+                        height: 146px;
+                        padding: 15px 35px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        &:hover {
+                            background-color: #478BF9;
+                        }
+
+                        .textComment {
+                            font: 400 16px Lexend;
+                            color: #ffffff;
+                            width: 200px;
+                        }
+
+                        .textData {
+                            font: 450 14px Lexend;
+                            color: #FFFFFF99;
+
+                        }
+                    }
+                }
+
+            }
         }
     }
 }

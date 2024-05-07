@@ -13,6 +13,7 @@ function Footer() {
                         <p className={style.elMenu}>Careers</p>
                         <p className={style.elMenu}>Brand Guide</p>
                     </div>
+                    <p className={style.adaptivetextMedia}>Our social media:</p>
                     <div className={style.socialMedia}>
                         <div className={style.iconTwitter}></div>
                         <div className={style.iconFacebook}></div>

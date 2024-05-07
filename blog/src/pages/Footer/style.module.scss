@@ -16,6 +16,10 @@
         justify-content: space-between;
         align-items: center;
 
+        .adaptivetextMedia {
+            display: none;
+        }
+
         .menuFooter {
             display: flex;
             gap: 40px;
@@ -23,6 +27,12 @@
             .elMenu {
                 font: 400 16px Lexend;
                 color: #ffffff;
+
+                &:hover {
+                    color: #478BF9;
+                    text-decoration: underline;
+                    transform: scale(1.2);
+                }
             }
         }
 
@@ -36,10 +46,11 @@
                 background-repeat: no-repeat;
                 width: 32px;
                 height: 32px;
+
                 &:hover {
-                    filter: brightness(1.4);
+                    filter: hue-rotate(315deg);
                     transform: scale(1.2);
-                  }
+                }
             }
 
             .iconFacebook {
@@ -48,10 +59,11 @@
                 background-repeat: no-repeat;
                 width: 32px;
                 height: 32px;
+
                 &:hover {
-                    filter: brightness(1.4);
+                    filter: hue-rotate(315deg);
                     transform: scale(1.2);
-                  }
+                }
             }
 
             .iconInstagram {
@@ -60,10 +72,11 @@
                 background-repeat: no-repeat;
                 width: 32px;
                 height: 32px;
+
                 &:hover {
-                    filter: brightness(1.4);
+                    filter: hue-rotate(315deg);
                     transform: scale(1.2);
-                  }
+                }
             }
 
             .iconLinkedln {
@@ -72,10 +85,11 @@
                 background-repeat: no-repeat;
                 width: 32px;
                 height: 32px;
+
                 &:hover {
-                    filter: brightness(1.4);
+                    filter: hue-rotate(315deg);
                     transform: scale(1.2);
-                  }
+                }
             }
 
             .iconYouTube {
@@ -84,10 +98,11 @@
                 background-repeat: no-repeat;
                 width: 32px;
                 height: 32px;
+
                 &:hover {
-                    filter: brightness(1.4);
+                    filter: hue-rotate(315deg);
                     transform: scale(1.2);
-                  }
+                }
             }
 
             .iconTicTok {
@@ -96,10 +111,11 @@
                 background-repeat: no-repeat;
                 width: 32px;
                 height: 32px;
+
                 &:hover {
-                    filter: brightness(1.4);
+                    filter: hue-rotate(315deg);
                     transform: scale(1.2);
-                  }
+                }
             }
 
             .iconTelegram {
@@ -108,10 +124,11 @@
                 background-repeat: no-repeat;
                 width: 32px;
                 height: 32px;
+
                 &:hover {
-                    filter: brightness(1.4);
+                    filter: hue-rotate(315deg);
                     transform: scale(1.2);
-                  }
+                }
             }
 
             .iconVK {
@@ -120,10 +137,165 @@
                 background-repeat: no-repeat;
                 width: 32px;
                 height: 32px;
+
                 &:hover {
-                    filter: brightness(1.4);
+                    filter: hue-rotate(315deg);
                     transform: scale(1.2);
-                  }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:320px) {
+
+    .wrapperFooter {
+        border: 4px solid #478BF9;
+        border-radius: 64px 64px 0px 0px;
+        padding: 20px;
+
+        .textMedia {
+            display: none;
+        }
+
+        .socialNetwork {
+            display: flex;
+            flex-direction: column;
+            align-items: normal;
+
+            .menuFooter {
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                margin-bottom: 10px;
+
+                .elMenu {
+                    font: 400 14px Lexend;
+                    color: #ffffff;
+
+                    &:hover {
+                        color: #478BF9;
+                        text-decoration: underline;
+                        transform: scale(1.01);
+                    }
+                }
+            }
+
+            .adaptivetextMedia {
+                display: block;
+                font: 400 16px Lexend;
+                color: #ffffff;
+                margin-bottom: 15px;
+            }
+
+            .socialMedia {
+                display: flex;
+                gap: 10px;
+
+                .iconTwitter {
+                    background-image: url(../../assets/twit.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 27px;
+                    height: 27px;
+
+                    &:hover {
+                        filter: hue-rotate(315deg);
+                        transform: scale(1.2);
+                    }
+                }
+
+                .iconFacebook {
+                    background-image: url(../../assets/f.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 27px;
+                    height: 27px;
+
+                    &:hover {
+                        filter: hue-rotate(315deg);
+                        transform: scale(1.2);
+                    }
+                }
+
+                .iconInstagram {
+                    background-image: url(../../assets/inst.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 27px;
+                    height: 27px;
+
+                    &:hover {
+                        filter: hue-rotate(315deg);
+                        transform: scale(1.2);
+                    }
+                }
+
+                .iconLinkedln {
+                    background-image: url(../../assets/lin.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 27px;
+                    height: 27px;
+
+                    &:hover {
+                        filter: hue-rotate(315deg);
+                        transform: scale(1.2);
+                    }
+                }
+
+                .iconYouTube {
+                    background-image: url(../../assets/yout.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 27px;
+                    height: 27px;
+
+                    &:hover {
+                        filter: hue-rotate(315deg);
+                        transform: scale(1.2);
+                    }
+                }
+
+                .iconTicTok {
+                    background-image: url(../../assets/tict.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 27px;
+                    height: 27px;
+
+                    &:hover {
+                        filter: hue-rotate(315deg);
+                        transform: scale(1.2);
+                    }
+                }
+
+                .iconTelegram {
+                    background-image: url(../../assets/tel.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 27px;
+                    height: 27px;
+
+                    &:hover {
+                        filter: hue-rotate(315deg);
+                        transform: scale(1.2);
+                    }
+                }
+
+                .iconVK {
+                    background-image: url(../../assets/vk.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 27px;
+                    height: 27px;
+
+                    &:hover {
+                        filter: hue-rotate(315deg);
+                        transform: scale(1.2);
+                    }
+                }
             }
         }
     }

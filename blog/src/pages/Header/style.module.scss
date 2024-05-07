@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
+.adaptiveWrapper {
+    display: none;
+
+    .imgGlobe {
+        background-image: url(../../assets/BtnLanguage.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 16px;
+        height: 16px;
+    }
+
+    .wanishMenu {
+        background-image: url(../../assets/☰.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 16px;
+        height: 16px;
+    }
+}
+
 .wrapperHeader {
     width: 1640px;
     border: 4px solid #478BF9;
@@ -8,7 +28,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin: 16px auto;
+    margin: 16px auto 0;
 
     .menu {
         display: flex;
@@ -18,6 +38,11 @@
         .elMenu {
             font: 400 16px Lexend;
             color: #ffffff;
+
+            &:hover {
+                color: #478BF9;
+                transform: scale(1.2);
+            }
         }
     }
 
@@ -61,6 +86,96 @@
             padding: 14px;
             font: 400 16px Lexend;
             color: #ffffff;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .adaptiveWrapper {
+        width: 300px;
+        border: 3px solid #478BF9;
+        border-radius: 64px;
+        display: flex;
+        justify-content: end;
+        padding: 10px;
+        align-items: center;
+        gap: 5px;
+        margin: 10px auto 0;
+
+        .imgGlobe {
+            background-image: url(../../assets/BtnLanguage.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 36px;
+            height: 36px;
+        }
+
+        .wanishMenu {
+            background-image: url(../../assets/Menu.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 36px;
+            height: 36px;
+        }
+    }
+    .wrapperHeader.active{
+        display: none;
+    }
+    .wrapperHeader {
+        width: 300px;
+        border: none;
+        border-radius: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px auto 0;
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            gap: 5px;
+
+            .elMenu {
+                width: 300px;
+                border: 3px solid #478BF9;
+                border-radius: 64px;
+                padding: 13px 24px;
+                font: 400 18px Lexend;
+                color: #ffffff;
+
+            }
+        }
+
+        .btnMenu {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-top: 30px;
+            .btnEN {
+                display: none;
+            }
+
+            .logIn {
+                width: 300px;
+                border: 2px solid #9DADF2;
+                border-radius: 24px;
+                padding: 14px;
+                font: 400 16px Lexend;
+                color: #ffffff;
+                text-align: center;
+            }
+
+            .signIn {
+                width: 300px;
+                border-radius: 24px;
+                background-color: #478BF9;
+                padding: 14px;
+                font: 400 16px Lexend;
+                color: #ffffff;
+                text-align: center;
+            }
         }
     }
 }
